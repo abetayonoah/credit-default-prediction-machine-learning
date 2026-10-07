@@ -11,14 +11,33 @@ The analysis is organized into two main notebooks:
 - **[Predictive Modeling](notebooks/02_credit_default_modeling.ipynb)** — Statistical analysis, feature preparation, Logistic Regression and Random Forest modeling, model evaluation, and feature importance analysis.
 
 ## Tools & Technologies
+
+**Programming & Data Analysis**
 - Python
-- SQL
-- Tableau
+- Pandas
+- NumPy
+
+**Data Visualization**
+- Matplotlib
+- Seaborn
+
+**Machine Learning**
+- Scikit-learn
 - Logistic Regression
 - Random Forest
-- Pandas
-- Scikit-learn
-- Statistical hypothesis testing
+
+**Statistical Analysis**
+- Independent t-tests
+- Chi-square tests
+- Descriptive statistics
+
+**Model Evaluation**
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- ROC-AUC
+- Confusion Matrix
 
 ## Dataset
 The project uses the **Default of Credit Card Clients** dataset from the UCI Machine Learning Repository. It contains information on **30,000 credit card clients** and includes:
