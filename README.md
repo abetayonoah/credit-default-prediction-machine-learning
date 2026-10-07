@@ -40,14 +40,24 @@ The analysis is organized into two main notebooks:
 - Confusion Matrix
 
 ## Dataset
-The project uses the **Default of Credit Card Clients** dataset from the UCI Machine Learning Repository. It contains information on **30,000 credit card clients** and includes:
 
-- Demographic variables (SEX, EDUCATION, MARRIAGE, AGE)
-- Credit limit
-- Payment history variables (PAY_0 to PAY_6)
-- Bill statement amounts (BILL_AMT1 to BILL_AMT6)
-- Payment amounts (PAY_AMT1 to PAY_AMT6)
-- Binary default target variable
+The project uses the **Default of Credit Card Clients** dataset from the UCI Machine Learning Repository. The dataset contains **30,000 credit card clients** and information about their demographic characteristics, credit limits, repayment history, bill statements, and previous payments.
+
+The main feature groups include:
+
+- **Demographics:** Sex, education, marital status, and age
+- **Credit Information:** Credit limit (`LIMIT_BAL`)
+- **Repayment History:** Payment status variables (`PAY_0` to `PAY_6`)
+- **Bill Statements:** Monthly bill amounts (`BILL_AMT1` to `BILL_AMT6`)
+- **Previous Payments:** Monthly payment amounts (`PAY_AMT1` to `PAY_AMT6`)
+- **Target Variable:** Whether the client defaulted on the following month's payment
+
+The target variable is imbalanced:
+
+- **Non-default:** 23,364 clients (77.88%)
+- **Default:** 6,636 clients (22.12%)
+
+This class imbalance was considered during model development and evaluation, particularly when comparing accuracy, precision, recall, F1-score, and ROC-AUC.
 
 ## Project Objectives
 - Identify the key factors influencing credit card default risk
