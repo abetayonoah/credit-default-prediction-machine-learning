@@ -3,6 +3,13 @@
 ## Project Overview
 This project focuses on predicting credit card default risk using a real-world dataset from a Taiwanese bank. The objective was to identify the demographic, behavioral, and credit-related factors most strongly associated with default and to develop predictive models that support better credit risk management.
 
+## Project Structure
+
+The analysis is organized into two main notebooks:
+
+- **[Exploratory Data Analysis](notebooks/01_credit_default_eda.ipynb)** — Data quality checks, descriptive statistics, class imbalance analysis, demographic analysis, and exploratory visualizations.
+- **[Predictive Modeling](notebooks/02_credit_default_modeling.ipynb)** — Statistical analysis, feature preparation, Logistic Regression and Random Forest modeling, model evaluation, and feature importance analysis.
+
 ## Tools & Technologies
 - Python
 - SQL
